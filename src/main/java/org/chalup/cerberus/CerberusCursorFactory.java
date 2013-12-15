@@ -27,6 +27,7 @@ import android.database.sqlite.SQLiteQuery;
 import android.util.Log;
 
 import java.util.List;
+
 /**
  * This is the main class for using Cerberus. Cerberus is typically used by
  * creating a CerberusCursorFactory instance directly in super call in your
