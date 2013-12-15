@@ -5,7 +5,6 @@ Android library for detecting and reporting long running SQLite queries.
 
 ```java
 public class Database extends SQLiteOpenHelper {
-
   public Database(Context context) {
     super(context, DB_NAME, new CerberusCursorFactory(50), CURRENT_VERSION);
   }
@@ -23,6 +22,18 @@ This is standard maven project. To build it just execute:
 mvn clean package
 ```
 in directory with pom.xml.
+
+Download
+--------
+Download [jar](http://repository.sonatype.org/service/local/artifact/maven/redirect?r=central-proxy&g=org.chalup&a=cerberus&v=LATEST) or add the dependency to your pom.xml:
+
+```xml
+<dependency>
+  <groupId>org.chalup</groupId>
+  <artifactId>cerberus</artifactId>
+  <version>(latest version)</version>
+</dependency>
+```
 
 License
 -------
