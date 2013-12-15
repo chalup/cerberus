@@ -11,7 +11,7 @@
   <groupId>org.chalup</groupId>
   <artifactId>cerberus</artifactId>
   <packaging>jar</packaging>
-  <version>0.1</version>
+  <version>0.2-SNAPSHOT</version>
 
   <name>cerberus</name>
   <description>Android library for detecting and reporting long running SQLite queries.</description>
@@ -22,7 +22,7 @@
     <url>https://github.com/chalup/cerberus/</url>
     <connection>scm:git:git://github.com/chalup/cerberus.git</connection>
     <developerConnection>scm:git:git@github.com:chalup/cerberus.git</developerConnection>
-    <tag>v0.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <developers>
