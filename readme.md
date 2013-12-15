@@ -6,7 +6,10 @@ Android library for detecting and reporting long running SQLite queries.
 ```java
 public class Database extends SQLiteOpenHelper {
 
-  public Database(Context context) {     super(context, DB_NAME, new CerberusCursorFactory(50), CURRENT_VERSION);   }  }
+  public Database(Context context) {
+    super(context, DB_NAME, new CerberusCursorFactory(50), CURRENT_VERSION);
+  }
+}
 ```
 
 If some of your queries takes longer than the threshold specified in the `CerberusCursorFactory` constructor, the report containing the offending query, elapsed query time, stack trace, and the result of `EXPLAIN QUERY PLAN` sqlite query will be dumped into the logcat.
